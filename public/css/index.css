@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  }
+  
+  a {
+    color: #00B7FF;
+  }
+  
+  .container i{
+    font-size: 70px;
+    padding: 15px;
+    margin-top: 10px;
+  }
+  
+  h1{
+    font-size: 50px;
+    margin-bottom: 1px;
+  }
+  
+  .container{
+    border: solid 1px blueviolet;
+    max-width: 590px;
+    margin-top: 10px;
+  }
+  
+  thead{
+    background-color: #00B7FF;
+  }
+  
+  th{
+    padding: 15px;
+  }
+  
+  td{
+    padding: 10px;
+    border-bottom: solid 1px #00B7FF;
+    text-align: center;
+  }
+  
+  .buttonEdit{
+    background-color: #00B7FF;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+  }
+  
+  .buttonDelete{
+    background-color: red;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+  }
