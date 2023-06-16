@@ -6,5 +6,7 @@ const apiAlumnosController = require("../../controllers/apiAlumnosController");
 router.get("/alumnos", apiAlumnosController.list);
 router.get("/alumnos/:id", apiAlumnosController.detail);
 
+router.post("/alumnos/create", apiAlumnosController.store)
+
 module.exports = router;
 

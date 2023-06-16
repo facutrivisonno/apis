@@ -12,7 +12,22 @@ const apiAlumnosController = {
             });
     },
     detail: (req,res) =>{
-        res.send("holiiiiiiiiis");
+        db.Alumnos.findByPk(req.params.id)
+            .then(alumno =>{
+                return res.json({
+                    data: alumno,
+                    status:200
+                })
+            });
+    },
+    store: (req,res) =>{
+        db.Alumnos.findByPk(req.params.id)
+            .then(alumno =>{
+                return res.json({
+                    data: alumno,
+                    status:200
+                })
+            });
     }
 }
 
