@@ -1,3 +1,4 @@
+const { response } = require("express");
 const db = require("../database/models");
 
 const apiAlumnosController = {
@@ -21,12 +22,23 @@ const apiAlumnosController = {
             });
     },
     store: (req,res) =>{
-        db.Alumnos.findByPk(req.params.id)
+        db.Alumnos.create(req.body)
             .then(alumno =>{
                 return res.json({
                     data: alumno,
-                    status:200
+                    status:200,
+                    created: "Ok"
                 })
+            });
+    },
+    delete: (req,res) =>{
+        db.Alumnos.destroy({
+            where:{
+                legajo : req.params.id
+            }
+        })
+            .then(response =>{
+                return res.json(response)
             });
     }
 }
